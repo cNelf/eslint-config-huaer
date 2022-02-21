@@ -1,13 +1,21 @@
 {
   "name": "eslint-config-huaer",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cNelf/eslint-config-huaer.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cNelf/eslint-config-huaer/issues"
+  },
+  "homepage": "https://github.com/cNelf/eslint-config-huaer#readme",
   "dependencies": {}
 }
