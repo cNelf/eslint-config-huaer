@@ -184,9 +184,9 @@ module.exports = {
      */
     'max-nested-callbacks': ['error', 3],
     /**
-     * 函数的参数禁止超过 3 个
+     * 函数的参数数量限制
      */
-    'max-params': ['error', 3],
+    'max-params': 'off',
     /**
      * 限制函数块中的语句数量
      */
@@ -259,7 +259,7 @@ module.exports = {
     /**
      * 禁止使用 console
      */
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
     /**
      * 禁止对使用 const 定义的常量重新赋值
      */
@@ -289,7 +289,7 @@ module.exports = {
     /**
      * 禁止使用 debugger
      */
-    'no-debugger': 'error',
+    'no-debugger': 'warn',
     /**
      * 禁止对一个变量使用 delete
      * @reason 编译阶段就会报错了
@@ -548,7 +548,7 @@ module.exports = {
     /**
      * 禁止对函数的参数重新赋值
      */
-    'no-param-reassign': 'error',
+    'no-param-reassign': 'off',
     /**
      * 禁止使用 ++ 或 --
      */
@@ -819,7 +819,7 @@ module.exports = {
     /**
      * 申明后不再被修改的变量必须使用 const 来申明
      */
-    'prefer-const': 'off',
+    'prefer-const': 'error',
     /**
      * 必须使用解构赋值
      */
@@ -864,7 +864,7 @@ module.exports = {
     /**
      * parseInt 必须传入第二个参数
      */
-    radix: 'error',
+    radix: 'off',
     /**
      * 禁止将 await 或 yield 的结果做为运算符的后面项
      * @reason 这样会导致不符合预期的结果
